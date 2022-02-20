@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="code.js">
+    <script src="https://kit.fontawesome.com/d1e0bd6d6f.js" crossorigin="anonymous"></script>
+    <script>
+        function showmini() {
+            var bar = document.getElementById("content");
+            bar.style.display = "block";
+        }
+        function hidemini() {
+            var bar = document.getElementById("content");
+            bar.style.display = "none";
+        }
+        function showphone() {
+            var phone = document.getElementById("phone");
+            var html = document.getElementById("html");
+            var css = document.getElementById("css");
+            var js = document.getElementById("js");
+            var end = document.getElementById("end");
+            phone.style.display = "block"
+            if (phone.style.display == "block") {
+                html.style.display = "none";
+                css.style.display = "none";
+                js.style.display = "none";
+                end.style.display = "none";
+            }
+        }
+        function hidephone() {
+            var phone = document.getElementById("phone");
+            var html = document.getElementById("html");
+            var css = document.getElementById("css");
+            var js = document.getElementById("js");
+            var end = document.getElementById("end");
+            phone.style.display = "none"
+            if (phone.style.display == "none") {
+                html.style.display = "block";
+                css.style.display = "block";
+                js.style.display = "block";
+                end.style.display = "block";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="heading" id="bar">
+        <div class="logo pos">
+            <p>PhucStudio</p>
+        </div>
+        <div class="bar pos">
+            <li class="nav">
+                <a href="#main" class="nav-item" onclick="hidemini()">Home</a>
+            </li>
+            <li class="nav nav-bar-2">
+                <a href="#bar" class="nav-item nav-bar-2" onclick="showmini()">Content</a>
+                <div class="bar-2" id="content">
+                    <a href="#html" onclick="hidemini()">HTML</a>
+                    <a href="#css" onclick="hidemini()">CSS</a>
+                    <a href="#js" onclick="hidemini()">JS</a>
+                </div>
+            </li>
+            <li class="nav">
+                <a href="#end" class="nav-item" onclick="hidemini()">End</a>
+            </li>
+        </div>
+        <div class="menu pos">
+            <img src="./imgs/Website_For_Me/icons8-menu-24.png" alt="" onclick="showphone()">
+        </div>
+    </div>
+    <div class="bar-phone" id="phone">
+        <div class="bar-menu">
+            <a href="#" class="bar-item">Home</a>
+            <a href="#" class="bar-item">Content</a>
+            <a href="#" class="bar-item">End</a>
+            <a href="#" class="bar-item" onclick="hidephone()">Exit</a>
+        </div>
+    </div>
+    <div class="introduce padding" id="main">
+        <div class="image-title" >
+            <img src="./imgs/Website_For_Me/e4LQkB0qKpOHnRts3rMaOKGjzoU2-6u3y31p1.jpeg" alt="">
+            <div class="intro" >
+                <h1>Welcome</h1>
+            </div>
+        </div>
+    </div>
+    <div class="content-html padding" id="html">
+        <div class="box-html">
+            <div class="content-img float">
+                <img src="./imgs/Website_For_Me/HTML_logo.png" alt="">
+            </div>
+            <div class="content-title float">
+                <div class="title">
+                    <h3>HTML</h3>
+                </div>
+                <div class="infor">
+                    <ul>
+                        <li>HTML stands for Hyper Text Markup Language</li>
+                        <li>HTML is the standard markup language for creating Web pages</li>
+                        <li>HTML describes the structure of a Web page</li>
+                        <li>HTML consists of a series of elements</li>
+                        <li>HTML elements tell the browser how to display the content</li>
+                        <li>HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content-css padding" id="css">
+        <div class="box-css">
+            <div class="content-img float">
+                <img src="./imgs/Website_For_Me/CSS3_logo.svg.png" alt="">
+            </div>
+            <div class="content-title float">
+                <div class="title">
+                    <h3>CSS</h3>
+                </div>
+                <div class="infor">
+                    <ul>
+                        <li>CSS stands for Cascading Style Sheets</li>
+                        <li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media</li>
+                        <li>CSS saves a lot of work. It can control the layout of multiple web pages all at once</li>
+                        <li>External stylesheets are stored in CSS files</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content-js padding" id="js">
+        <div class="box-js">
+            <div class="content-img float">
+                <img src="./imgs/Website_For_Me/JS.png" alt="">
+            </div>
+            <div class="content-title float">
+                <div class="title">
+                    <h3>JAVASCRIPT</h3>
+                </div>
+                <div class="infor">
+                    <ul>
+                        <li>JavaScript is the world's most popular programming language.</li>
+                        <li>JavaScript is the programming language of the Web.</li>
+                        <li>JavaScript is easy to learn.</li>
+                        <li>JavaScript and Java are completely different languages, both in concept and design.</li>
+                        <li>JavaScript was invented by Brendan Eich in 1995, and became an ECMA standard in 1997.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ending" id="end">
+        <div class="box-end padding">
+            <p>Name: Nguyen Trong Hoang Phuc</p>
+            <p>Phone number: 0889271576</p>
+        </div>
+    </div>
+</body>
+</html>
